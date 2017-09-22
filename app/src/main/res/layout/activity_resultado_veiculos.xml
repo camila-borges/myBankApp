@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="20dp"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp"
+    android:paddingTop="20dp"
+    tools:context="com.example.camila.mybank.ResultadoVeiculosActivity">
+
+    <TextView
+        android:id="@+id/TextViewResultadoVeiculo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal"
+        android:text="RESULTADO"
+        android:textColor="#379b85"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/TextViewVeiculoValorFinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextViewResultadoVeiculo"
+        android:layout_marginBottom="10dp"
+        android:text="Valor Final" />
+
+    <TextView
+        android:id="@+id/TextViewVeiculoValorFinalPreco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextViewVeiculoValorFinal"
+        android:layout_marginBottom="10dp"
+        android:text="R$ " />
+
+
+    <TextView
+        android:id="@+id/TextViewVeiculoValorParcelas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextViewVeiculoValorFinalPreco"
+        android:layout_marginBottom="10dp"
+        android:text="Valor das Parcelas" />
+
+    <TextView
+        android:id="@+id/TextViewVeiculoValorParcelasPreco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextViewVeiculoValorParcelas"
+        android:layout_marginBottom="10dp"
+        android:text="R$ " />
+
+
+    <Button
+        android:id="@+id/ButtonNovaTransacaoVeiculo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextViewVeiculoValorParcelasPreco"
+        android:layout_centerHorizontal="true"
+        android:background="#379b85"
+        android:padding="5dp"
+        android:text="Nova simulação"
+        android:textColor="#FFF" />
+
+
+</RelativeLayout>

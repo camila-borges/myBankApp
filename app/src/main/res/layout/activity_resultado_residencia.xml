@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="20dp"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp"
+    android:paddingTop="20dp"
+    tools:context="com.example.camila.mybank.ResultadoResidenciaActivity">
+
+    <TextView
+        android:id="@+id/TextViewResultadoResidencia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal"
+        android:text="RESULTADO"
+        android:textColor="#379b85"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/TextViewResidenciaValorFinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextViewResultadoResidencia"
+        android:layout_marginBottom="10dp"
+        android:text="Valor Final" />
+
+    <TextView
+        android:id="@+id/TextViewResidenciaValorFinalPreco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextViewResidenciaValorFinal"
+        android:layout_marginBottom="10dp"
+        android:text="R$ " />
+
+
+    <TextView
+        android:id="@+id/TextViewResidenciaValorParcelas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextViewResidenciaValorFinalPreco"
+        android:layout_marginBottom="10dp"
+        android:text="Valor das Parcelas" />
+
+    <TextView
+        android:id="@+id/TextViewResidenciaValorParcelasPreco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextViewResidenciaValorParcelas"
+        android:layout_marginBottom="10dp"
+        android:text="R$ " />
+
+
+    <Button
+        android:id="@+id/ButtonNovaTransacaoResidencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextViewResidenciaValorParcelasPreco"
+        android:layout_centerHorizontal="true"
+        android:background="#379b85"
+        android:padding="5dp"
+        android:text="Nova simulação"
+        android:textColor="#FFF" />
+
+
+</RelativeLayout>

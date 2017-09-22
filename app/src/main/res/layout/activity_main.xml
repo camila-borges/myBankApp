@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:padding="60dp"
+    tools:context="com.example.camila.mybank.MainActivity">
+
+    <ImageView
+        android:id="@+id/platyLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/platybank" />
+
+    <RadioGroup
+        android:id="@+id/RadioGroupMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/platyLogo"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="75dp">
+
+        <RadioButton
+            android:id="@+id/RadioButtonResidencia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Residência"
+            android:textColor="#FFF" />
+
+        <RadioButton
+            android:id="@+id/RadioButtonVeiculo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Veículo"
+            android:textColor="#FFF" />
+
+    </RadioGroup>
+</RelativeLayout>

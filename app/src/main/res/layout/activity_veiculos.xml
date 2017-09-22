@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/veiculoActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="20dp"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp"
+    android:paddingTop="20dp"
+    tools:context="com.example.camila.mybank.VeiculosActivity">
+
+    <TextView
+        android:id="@+id/TextViewVeiculos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal"
+        android:text="VEÍCULO"
+        android:textColor="#379b85"
+        android:textSize="25dp" />
+
+
+    <RadioGroup
+        android:id="@+id/RadioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextViewVeiculos"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/TextViewVeiculoQ1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TextViewVeiculos"
+            android:text="Estado do veículo: " />
+
+        <RadioButton
+            android:id="@+id/RadioButtonVeiculoNovo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:checked="true"
+            android:text="Novo" />
+
+        <RadioButton
+            android:id="@+id/RadioButtonVeiculoUsado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Usado" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/EditTextVeiculoPreco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RadioGroup1"
+        android:layout_marginBottom="20dp"
+        android:hint="Valor do veículo"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/EditTextVeiculoEntrada"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EditTextVeiculoPreco"
+        android:layout_marginBottom="20dp"
+        android:hint="Porcentagem de entrada"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/EditTextVeiculoParcelas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EditTextVeiculoEntrada"
+        android:layout_marginBottom="20dp"
+        android:hint="Quantidade de parcelas"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/EditTextVeiculoRendaMensal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EditTextVeiculoParcelas"
+        android:layout_marginBottom="20dp"
+        android:hint="Renda líquida mensal"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/ButtonVeiculoCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EditTextVeiculoRendaMensal"
+        android:layout_centerHorizontal="true"
+        android:background="#379b85"
+        
+        android:text="CALCULAR"
+        android:textColor="#FFF" />
+
+</RelativeLayout>
